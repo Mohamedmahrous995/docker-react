@@ -1,9 +1,9 @@
-sudo: requid
+sudo: required
 services:
   - docker
 
 before_install:
-  -  sudo apt-get update
+  - sudo apt-get update
   - docker build -t mohamedmahrous995/docker-react -f Dockerfile.dev .
 
 script:
